@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="display-container">
+            <input readonly placeholder="Password" class="display" data-passwordDisplay>
+            <button data-copy>
+                <span data-copyMsg></span>
+                <img src="https://creazilla-store.fra1.digitaloceanspaces.com/icons/3238050/copy-icon-md.png" alt="copy"width="18" height="12">
+            </button>
+        </div>
+        <div class="input-container">
+            <div class="length-container">
+                <p>Password length</p>
+                <p data-lengthNumber>0</p>
+            </div>
+            <input type="range"min="1" max="20" class="slider" step="1" data-slider>
+        
+        <div>
+            <input type="checkbox" id="uppercase">
+            <label for="uppercase">Includes Uppercase letter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="lowercase">
+            <label for="lowercase">Includes Lowercase letter</label>
+        </div>
+        <div>
+            <input type="checkbox" id="number">
+            <label for="number">Includes Numbers</label>
+        </div>
+        <div>
+            <input type="checkbox" id="symbol">
+            <label for="symbol">Includes Symbols</label>
+        </div>
+        <div class="strength-container">
+            <p>Strength</p>
+            <div data-indicator></div>
+        </div>
+        <button class="generateButton">Generate Password</button>
+    </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
